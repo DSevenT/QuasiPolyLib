@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name='QuasiPolyLib',
     version='0.1.0',
-    description='A library for analysing quasi-polynomials',
+    description='A library for analyzing quasi-polynomials',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Diego Torres-Garcia',
@@ -15,7 +15,7 @@ setup(
         # List dependencies here
     ],
     classifiers=[
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3',  
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
