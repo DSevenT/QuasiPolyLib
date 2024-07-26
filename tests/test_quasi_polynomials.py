@@ -17,5 +17,12 @@ class TestQuasiPolynomial(unittest.TestCase):
         expected = 7 * sp.exp(-4) + 7 * sp.exp(-2) + 1
         self.assertEqual(result, expected)
 
+    def test_representation(self):
+        s = sp.symbols('s')
+        qp = QuasiPolynomial([(s**3, 0), (s**2 + 1, 4), (s + 6, 2)])
+        expected_repr = "QuasiPolynomial(s**3 + exp(-4*s)*(s**2 + 1) + exp(-2*s)*(s + 6))"
+        self.assertEqual(repr(qp), expected_repr)
+        print(qp)
+
 if __name__ == '__main__':
     unittest.main()
